@@ -30,7 +30,7 @@ The test cases are in the tests.py file.
     - Verify that pip is installed by typing the command "pip -V" on the command prompt or the terminal
 4. Create a Python virtual environment and activate it.
     - Type "python -m venv /path/to/new/virtual/environment" to create a virtual environment
-    - Go to the virtual environment directory, then type "Scripts/activate.bat" on Windows or "bin/activate/bat" on Linux to activate the Python virtual environment
+    - Go to the virtual environment directory, then type "Scripts/activate.bat" on Windows or "bin/activate.bat" on Linux to activate the Python virtual environment
 5. Install the dependencies
     - Django: python3 -m pip install Django
     - rest_framework: python3 -m pip install djangorestframework
