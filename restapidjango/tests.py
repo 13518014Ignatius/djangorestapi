@@ -28,6 +28,8 @@ class LoginTestCase(TestCase):
         self.assertIn("token", response.data)
         token = response.data['token']
         self.assertTrue(authenticate_with_token(token))
+        fakeToken = ""
+        self.assertFalse(authenticate_with_token(fakeToken))
 
     # Test #2: login_request failure due to wrong credentials
     # status code: 400 BAD REQUEST   
