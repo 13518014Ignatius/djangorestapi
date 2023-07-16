@@ -84,9 +84,9 @@ def remove_user_request(request):
     except User.DoesNotExist:
         return Response({"error": "User does not exist"}, status=status.HTTP_404_NOT_FOUND)
     
-# login_request function 
-# a POST endpoint to log in using username and password
-# returns token and 200 OK if successful, but error message and 400 BAD REQUEST if not successful    
+# authenticate_with_token function 
+# a helper function to verify token logins
+# returns the user represented by the token if successful, but none if not successful
 def authenticate_with_token(token_key):
     try:
         token = Token.objects.get(key=token_key)
